@@ -12,11 +12,12 @@ function Random(min, max) {
 
 function randomWaifu(){
     let n = Random(1, 56)
-    fetch('http://127.0.0.1:5500/images.json')
+    fetch('https://dragonlord666x.github.io/DragonLord666x/images.json')
     .then( res => res.json())
     .then(data => {
-        waifuImg.innerHTML = `<iframe src="${data.images[n]} "> 
-        waifuImg.style.scale = 1.2</iframe>`
+        let n = Random(1, 58)
+        waifuImg.innerHTML = `<iframe src="${data.images[n]}" allow="autoplay" > </iframe>`
+        waifuImg.style.scale = 1.2
     })
 
     waifuBtn.style.display = 'none'

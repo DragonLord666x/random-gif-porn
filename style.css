@@ -36,6 +36,9 @@ header{
 }
 
 @media (max-width: 721px) {
+    body{
+        background-color: black;
+    }
 
     .pics{
         grid-template-columns: 1fr;
@@ -44,6 +47,7 @@ header{
 
     .pics-box{
         width: 100vw;
+        height: 400px;
     }
     .pics-box p{
         display: none;
@@ -89,5 +93,7 @@ header{
     .btn{
         width: 100%;
         border-radius: 20px;
+        background-color: rgb(190, 48, 32);
+        color: white;
     }
 }
